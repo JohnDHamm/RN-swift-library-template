@@ -9,31 +9,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-swift-library-template.git",
-    "baseUrl": "https://github.com/github_account/react-native-swift-library-template"
+    "url": "git+https://github.com/JohnDHamm/RN-swift-library-template.git",
+    "baseUrl": "https://github.com/JohnDHamm/RN-swift-library-template"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "johndhammcodes",
+    "email": "johndhammcodes@gmail.com"
   },
   "license": "Apache-2.0",
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
   "peerDependencies": {
-    
-    "react": "16.2.0",
-    "react-native": "^0.52.0",
-    "react-native-windows": "0.52.0"
+
+    "react": "16.6.3",
+    "react-native": "0.58.5"
 
   },
   "devDependencies": {
-    
-    "react": "16.2.0",
-    "react-native": "^0.52.0",
-    "react-native-windows": "0.52.0"
+
+    "react": "16.6.3",
+    "react-native": "0.58.5"
 
   }
 }
