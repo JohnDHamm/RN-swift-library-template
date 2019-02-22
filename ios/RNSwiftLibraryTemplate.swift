@@ -13,7 +13,7 @@ class RNSwiftLibraryTemplate: NSObject {
     
     @objc
     func callbackMethod(_ callback: RCTResponseSenderBlock) {
-        callback(["callback message 3"])
+        callback(["callback message"])
     }
     
     @objc
