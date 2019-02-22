@@ -2,4 +2,4 @@ import { NativeModules } from 'react-native';
 
 const { RNSwiftLibraryTemplate } = NativeModules;
 
-export default RNSwiftLibraryTemplate;
+export { RNSwiftLibraryTemplate };
