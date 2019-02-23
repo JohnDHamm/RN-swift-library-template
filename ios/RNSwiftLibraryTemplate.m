@@ -1,17 +1,16 @@
-#import "RNSwiftLibraryTemplate.h"
+#import "React/RCTBridgeModule.h"
+//#import "React/RCTEventEmitter.h"
 
-@implementation RNSwiftLibraryTemplate
+@interface RCT_EXTERN_MODULE(RNSwiftLibraryTemplate, NSObject)
 
-RCT_EXPORT_MODULE()
+RCT_EXTERN_METHOD(callbackMethod: (RCTResponseSenderBlock)callback)
 
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
-}
+RCT_EXTERN_METHOD(
+                  promiseMethod: (RCTPromiseResolveBlock)resolve
+                  rejecter: (RCTPromiseRejectBlock)reject
+                  )
 
-RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnull NSNumber *)numberArgument callback:(RCTResponseSenderBlock)callback)
-{
-    // TODO: Implement
-}
-
+//RCT_EXTERN_METHOD(exposedMethodWithEvent)
+//RCT_EXTERN_METHOD(passStringToNative:(NSString *)someStringArg)
+//RCT_EXTERN_METHOD(passObjectToNative:(NSDictionary *)someObjectArg)
 @end
