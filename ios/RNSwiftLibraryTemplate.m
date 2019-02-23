@@ -6,7 +6,7 @@
 RCT_EXTERN_METHOD(callbackMethod: (RCTResponseSenderBlock)callback)
 
 RCT_EXTERN_METHOD(
-                  promiseMethod: (Bool: *)argument
+                  promiseMethod: (BOOL: *)argument
                   resolver: (RCTPromiseResolveBlock)resolve
                   rejecter: (RCTPromiseRejectBlock)reject
                   )
