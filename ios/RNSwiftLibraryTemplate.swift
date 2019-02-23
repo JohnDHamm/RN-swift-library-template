@@ -19,7 +19,7 @@ class RNSwiftLibraryTemplate: NSObject {
     @objc
     func promiseMethod(
     _ argument: Bool,
-    resolve: RCTPromiseResolveBlock,
+    resolver resolve: RCTPromiseResolveBlock,
     rejecter reject: RCTPromiseRejectBlock
     ) -> Void {
         if (argument) {
