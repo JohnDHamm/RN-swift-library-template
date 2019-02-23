@@ -1,3 +1,5 @@
 .gitattributes
 .gitignore
 .npmignore
+
+.idea/

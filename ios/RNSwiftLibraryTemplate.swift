@@ -18,11 +18,11 @@ class RNSwiftLibraryTemplate: NSObject {
     
     @objc
     func promiseMethod(
-    _ resolve: RCTPromiseResolveBlock,
+    _ argument: Bool,
+    resolver resolve: RCTPromiseResolveBlock,
     rejecter reject: RCTPromiseRejectBlock
     ) -> Void {
-        let success : Bool = true
-        if (success) {
+        if (argument) {
           resolve("promise method success")
         } else {
           let error = NSError(domain: "", code: 200, userInfo: nil)
