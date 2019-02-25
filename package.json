@@ -1,7 +1,7 @@
 {
   "name": "@johndhammcodes/react-native-swift-library-template",
   "title": "React Native Swift Library Template",
-  "version": "1.0.6",
+  "version": "1.1.2",
   "description": "A React Native library to implement Swift native code in NativeModules",
   "main": "index.js",
   "scripts": {
