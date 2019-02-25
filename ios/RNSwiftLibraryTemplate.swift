@@ -9,7 +9,7 @@
 import Foundation
 
 @objc(RNSwiftLibraryTemplate)
-class RNSwiftLibraryTemplate: NSObject {
+class RNSwiftLibraryTemplate: RCTEventEmitter {
     
     @objc
     func callbackMethod(_ callback: RCTResponseSenderBlock) {
@@ -30,13 +30,13 @@ class RNSwiftLibraryTemplate: NSObject {
         }
     }
     
-    override func constantsToExport() -> [AnyHashable : Any]! {
-        return ["constant" : "constant exported from Swift"]
-    }
-    
     @objc
     func eventEmitterMethod() {
         sendEvent(withName: "eventEmitter", body: ["message": "event emitter message"])
+    }
+    
+    override func constantsToExport() -> [AnyHashable : Any]! {
+        return ["constant" : "constant exported from Swift"]
     }
     
     override func supportedEvents() -> [String]! {
