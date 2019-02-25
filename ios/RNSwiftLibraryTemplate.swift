@@ -30,30 +30,20 @@ class RNSwiftLibraryTemplate: NSObject {
         }
     }
     
-    @objc
-    func constantsToExport() -> [AnyHashable : Any]! {
+    override func constantsToExport() -> [AnyHashable : Any]! {
         return ["constant" : "constant exported from Swift"]
     }
     
     @objc
-    static func requiresMainQueueSetup() -> Bool {
+    func eventEmitterMethod() {
+        sendEvent(withName: "eventEmitter", body: ["message": "event emitter message"])
+    }
+    
+    override func supportedEvents() -> [String]! {
+        return ["eventEmitter"]
+    }
+    
+    override static func requiresMainQueueSetup() -> Bool {
         return true
     }
-
-    
-    //  private var message = "message for exposed method with event"
-    //
-    //  @objc
-    //  func exposedMethodWithEvent() {
-    //    let data = "secret"
-    //    print("method is exposed! \(data)")
-    //
-    //    sendEvent(withName: "exposedEvent", body: ["message": message])
-    //  }
-    //
-    //  override func supportedEvents() -> [String]! {
-    //    return ["exposedEvent"]
-    //  }
-    //
-    
 }

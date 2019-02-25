@@ -1,7 +1,7 @@
 #import "React/RCTBridgeModule.h"
-//#import "React/RCTEventEmitter.h"
+#import "React/RCTEventEmitter.h"
 
-@interface RCT_EXTERN_MODULE(RNSwiftLibraryTemplate, NSObject)
+@interface RCT_EXTERN_MODULE(RNSwiftLibraryTemplate, RCTEventEmitter)
 
 RCT_EXTERN_METHOD(callbackMethod: (RCTResponseSenderBlock)callback)
 
@@ -11,5 +11,6 @@ RCT_EXTERN_METHOD(
                   rejecter: (RCTPromiseRejectBlock)reject
                   )
 
-//RCT_EXTERN_METHOD(exposedMethodWithEvent)
+RCT_EXTERN_METHOD(eventEmitter)
+
 @end
